@@ -7,7 +7,7 @@
 
 body{
   background-color: black;
-  position: relative;
+  /* position: relative; */
 }
 
 /* Se le Aplica Estilos a la barra de Navegacion  */
@@ -18,15 +18,20 @@ nav{
 
 /* Contenedor del navegador */
 .Navegador{
-  display: inline-block;
+  list-style: none; /* Se elimina el estilo de lista */
+  display: flex; /* Se agrega la propiedad de flexbox */
+  justify-content: right; /* Se alinea el contenido a la derecha */
+  flex-direction: row; /* Se establece la dirección de los elementos secundarios en columna */
+  align-items: end; /* Se alinea los elementos secundarios al final del contenedor */
+  
 }
 
 /* imagen del Logo  */
 .Navegador__Logo{
-  display: inline-block;
-  width: 50px;
-  height: 50px;
-  margin-right: 140vh;  /* Se correige el error de los 160vh a 140vh */
+  /* display: inline-block; */
+  width: 100px;
+  height: 100px;
+  position: absolute;
 }
 
 /* Estilo de los 3 items */
@@ -34,7 +39,7 @@ nav{
   text-decoration: none;
   padding: 10px;
   margin: 10px;
-  display: inline-block;
+  /* display: inline-block; */
   border-radius: 10px;
   font-size: x-large;
   transition: 1s;
@@ -50,6 +55,7 @@ nav{
   background-color: green;
   color: #f4f4f4;
   transition: 1s;
+  width: 9rem;
 }
 .Navegador__item--Activo:hover{
   transition: 1s;
@@ -62,7 +68,9 @@ nav{
 }
 /* Este es el titulo principal de la Pagina */
 .Titulo {
-  display: inline-block;
+  /* display: inline-block; */
+  display: flex; /* Se agrega la propiedad de flexbox */
+  justify-content: center; /* Se centra el contenido horizontalmente */
   width: 100%;
   margin-top: 100px;
   font-family: "teko", sans-serif;
@@ -107,7 +115,6 @@ nav{
 .Titulo__Principal{
   text-align: center;
   color: #ffffff;
-  text-align: center;
   font-family: "teko", sans-serif;
   font-weight: 800;
   font-size: 8rem;
@@ -118,19 +125,26 @@ nav{
 /* Se Realizan Ajustes al Card */
 .Contenedor-Card{
   padding: 1%;
+  display: flex; /* Se agrega la propiedad de flexbox */
+  flex-direction: column; /* Se establece la dirección de los elementos secundarios en columna */
+  align-items: center; /* Se alinea los elementos secundarios al centro del contenedor */
 }
 .Card{
+  display: flex; /* Se agrega la propiedad de flexbox */
+  gap: 24rem; /* Se agrega espacio entre los elementos secundarios */
   width: 70%;
   height: 20%;
   margin: 0 auto;
   margin-top: 20px;
   padding: 5%;
   border: gray solid 8px;
-  position: relative;
+  /* position: relative; */
 }
 .Card-Contenido{
   width: 40%;
-  position: absolute;
+  display: flex; /* Se agrega la propiedad de flexbox */
+  flex-direction: column; /* Se establece la dirección de los elementos secundarios en columna */
+  /* align-items: center; Se alinea los elementos secundarios al centro del contenedor */
 }
 
 .Card__Titulo{
@@ -164,7 +178,7 @@ nav{
   font-size:16px;
   text-decoration: none;
   border: none;
-  display: block;
+  /* display: block; */
   border-radius: 10px;
   width: 150px;
   height: 50px;
@@ -177,7 +191,9 @@ nav{
 
 
 .Card-imagen{
-  display: inline-block;
-  margin-left: 750px;
+  /* display: inline-block; */
+  display: flex; /* Se agrega la propiedad de flexbox */
+  flex-direction: row; /* Se establece la dirección de los elementos secundarios en columna */
+  justify-content: center; /* Se centra el contenido horizontalmente */
 
 }
