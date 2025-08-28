@@ -117,7 +117,7 @@ nav{
   color: #ffffff;
   font-family: "teko", sans-serif;
   font-weight: 800;
-  font-size: 8rem;
+  font-size: 6rem;
   text-transform: uppercase;
   line-height: 100px;
 }
@@ -131,8 +131,9 @@ nav{
 }
 .Card{
   display: flex; /* Se agrega la propiedad de flexbox */
-  gap: 24rem; /* Se agrega espacio entre los elementos secundarios */
-  width: 70%;
+   /* Se agrega espacio entre los elementos secundarios */
+   gap: 9rem;
+  width: 60rem;
   height: 20%;
   margin: 0 auto;
   margin-top: 20px;
@@ -141,7 +142,7 @@ nav{
   /* position: relative; */
 }
 .Card-Contenido{
-  width: 40%;
+  width: 50%;
   display: flex; /* Se agrega la propiedad de flexbox */
   flex-direction: column; /* Se establece la dirección de los elementos secundarios en columna */
   /* align-items: center; Se alinea los elementos secundarios al centro del contenedor */
@@ -151,7 +152,7 @@ nav{
   color: #fff;
   font-family: "teko", sans-serif;
   font-weight: 800;
-  font-size: 4rem;
+  font-size: 3rem;
   text-transform: uppercase;
   line-height: 65px;
   max-width: 100%;;
@@ -160,7 +161,7 @@ nav{
 .Card_Descripcion{
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-weight: 800;
-  font-size: 200%;
+  font-size: 1.5rem;
   margin-bottom: 20px;
 }
 
@@ -190,10 +191,149 @@ nav{
 }
 
 
-.Card-imagen{
+.card__Imagen{
+  width: 12rem;
+  height: 27rem;
   /* display: inline-block; */
   display: flex; /* Se agrega la propiedad de flexbox */
   flex-direction: row; /* Se establece la dirección de los elementos secundarios en columna */
   justify-content: center; /* Se centra el contenido horizontalmente */
 
+}
+
+@media (max-width: 992px) {
+  .Card {
+    flex-direction: row;
+    align-items: center;
+    width: 45rem;
+    height: 20%;
+  }
+
+  .card__Imagen{
+    width: 11rem;
+    height: 25rem;
+  }
+
+  .Card-Contenido {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    
+
+  }
+
+  .Titulo__Principal{
+    font-size: 5rem;
+    line-height: 80px;
+    text-align: center;
+  }
+
+}
+
+
+@media (max-width: 768px) {
+  .Card {
+    flex-direction: row;
+    align-items: center;
+    width: 36rem;
+    height: 20%;
+    
+  }
+  
+  .card__Imagen {
+    width: 10rem;
+    height: 23rem;
+  }
+  
+  .Card-Contenido {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+  }
+  
+  .Titulo__Principal {
+    font-size: 3.4rem;
+    line-height: 80px;
+    text-align: center;
+  }
+
+  .Card__Titulo{
+    font-size: 2rem;
+    line-height: 50px;
+  }
+  .Card_Descripcion{
+    font-size: 1.2rem;
+    line-height: 30px;
+  }
+  .Card_Precio{
+    font-size: 1.2rem;
+  }
+  
+  .card__boton--Primario{
+    font-size: 14px;
+    width: 120px;
+    height: 40px;
+  }
+}
+
+@media (max-width: 480px) {
+
+  .Navegador__Logo{
+    position: static;
+  }
+
+  .Navegador__menu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    justify-content: center;
+  }
+  .Card {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 95%;
+    height: 20%;
+    gap: 1rem;
+  }
+
+  .card__Imagen {
+    width: 8rem;
+    height: auto;
+  }
+
+  .Card-Contenido {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .Titulo__Principal {
+    font-size: 2.5rem;
+    line-height: 60px;
+    text-align: center;
+  }
+
+  .Card__Titulo {
+    font-size: 2rem;
+    line-height: 50px;
+  }
+
+  .Card_Descripcion {
+    font-size: 1.2rem;
+    line-height: 30px;
+  }
+  .Card_Precio {
+    font-size: 1.2rem;
+  }
+
+  .card__boton--Primario {
+    font-size: 14px;
+    width: 120px;
+    height: 40px;
+  }
 }
